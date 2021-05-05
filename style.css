@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'krona';
+    src: url(fonts/KronaOne-Regular.ttf);
+}
+
+* {
+    font-family: 'krona';
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    scroll-behavior: smooth;
+
+    margin-left: 2%;
+    padding-left: 2%;
+    margin-right: 2%;
+    padding-right: 2%;
+
+    
+
+    background-color: rgb(2, 2, 33);
+    
+    color: white;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+
+h1{
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.letter{
+    opacity: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+
+    left: 50%;
+}
+
+form :first-child{
+    width: 50%;
+    height: 60px;
+
+    align-self: center;
+    font-size: 25px;
+
+    border-radius: 25px;
+    outline: none;
+    border: none;
+
+    padding-inline-start: 1%;
+    padding-inline-end: 1.5%;
+    
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    background-image: url('img/x.png');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+  }
+
+form :last-child{
+
+    width: 200px;
+    height: 50px;
+
+    align-self: center;
+    margin-top: 3vh;
+
+    background-color: #F97F00;
+    border-radius: 25px;
+    border: #000000 1px solid;
+
+    color: white;
+    outline: none;
+
+    font-size: 20px;
+}
+form :last-child:hover{
+    background-color: #ff921d;
+}
+
+#wordWatch{
+    color: #F97F00;
+}
+
+#notextdiv{
+    text-align: center;
+    visibility: hidden;
+}
+
+.displaynotextdiv{
+    visibility: visible!important;
+}
+
+
+
+.addAnimationLetters{
+    animation-name: letterTitle;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#movie-list{
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+.movie-card{
+    flex: 1 0 25%;
+    min-width: 280px;
+    background-repeat: no-repeat;
+    height: 750px;
+    margin: 3%;
+
+
+}
+
+
+#vignette{
+    height: 100%;
+    margin: 0;
+}
+
+#resume{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+    overflow: hidden;
+}
+
+#vignette:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+@keyframes letterTitle{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+.headernew{
+    display: flex!important;
+    flex-direction: row!important;
+    margin-top: 2vh!important;
+    margin-bottom: 5vh!important;
+}
+
+.titlenew{
+    font-size: 70px!important;
+    margin-bottom: 0!important;
+}
+
+.formnew{
+    display: flex!important;
+    flex-direction: row!important;
+    gap: 20px;
+    padding-left: 1%;
+    width: 100%!important;  
+}
+
+.searchnew{
+    width: 80%!important;
+}
+
+.submitnew{
+    margin-top: 0!important;
+    height: 60px!important;
+}
+
+.notextdivnew{
+    margin-top: -5vh;
+}
